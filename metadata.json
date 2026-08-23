@@ -1,0 +1,6 @@
+{
+  "name": "SwiftRide - Urban Mobility",
+  "description": "Premium electric scooter fleet rental platform. Fast, affordable, and 100% carbon neutral urban commuting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+}
+
+/* Custom scrollbar and smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dark Mode Theme Definition */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+/* Dark Mode Navigation & Footer */
+html.dark header,
+html.dark aside {
+  background-color: rgba(11, 17, 32, 0.95) !important;
+  border-color: #1e293b !important;
+}
+
+html.dark footer {
+  background-color: #060911 !important;
+  border-color: #1e293b !important;
+}
+
+/* Dark Mode Surfaces & Containers */
+html.dark .bg-white {
+  background-color: #111827 !important;
+  color: #f8fafc !important;
+}
+
+html.dark .bg-\[\#f8fafc\],
+html.dark .bg-slate-50,
+html.dark .bg-gray-50 {
+  background-color: #090d16 !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #1f293d !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .bg-slate-200 {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+/* Dark Mode Border overrides */
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-200\/90,
+html.dark .border-slate-200\/80,
+html.dark .border-slate-200\/70,
+html.dark .border-slate-200\/60,
+html.dark .border-slate-200\/50,
+html.dark .border-gray-200,
+html.dark .border-gray-100 {
+  border-color: #1e293b !important;
+}
+
+/* Dark Mode Typography Hierarchy */
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-gray-900,
+html.dark .text-gray-800 {
+  color: #f8fafc !important;
+}
+
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-gray-700,
+html.dark .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-500,
+html.dark .text-gray-500 {
+  color: #94a3b8 !important;
+}
+
+html.dark .text-slate-400,
+html.dark .text-gray-400 {
+  color: #64748b !important;
+}
+
+/* Form Elements & Inputs */
+html.dark input:not([type="checkbox"]):not([type="radio"]),
+html.dark select,
+html.dark textarea {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Emerald Accents & Tinted Cards */
+html.dark .bg-emerald-50,
+html.dark .bg-emerald-50\/90,
+html.dark .bg-emerald-50\/80,
+html.dark .bg-emerald-50\/70,
+html.dark .bg-emerald-50\/60,
+html.dark .bg-emerald-50\/50,
+html.dark .bg-emerald-50\/40 {
+  background-color: rgba(6, 78, 59, 0.3) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+
+html.dark .text-emerald-950,
+html.dark .text-emerald-900 {
+  color: #a7f3d0 !important;
+}
+
+html.dark .text-emerald-800,
+html.dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+/* Alert Tints */
+html.dark .bg-amber-50,
+html.dark .bg-amber-50\/70,
+html.dark .bg-amber-50\/80 {
+  background-color: rgba(120, 53, 15, 0.3) !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+}
+
+html.dark .text-amber-900,
+html.dark .text-amber-800 {
+  color: #fde68a !important;
+}
+
+html.dark .bg-rose-50,
+html.dark .bg-rose-50\/80,
+html.dark .bg-red-50 {
+  background-color: rgba(136, 19, 55, 0.3) !important;
+  border-color: rgba(244, 63, 94, 0.3) !important;
+}
+
+html.dark .text-rose-900,
+html.dark .text-rose-800 {
+  color: #fecdd3 !important;
+}
+
+/* Modals & Dropdown Popovers */
+html.dark .shadow-xl,
+html.dark .shadow-2xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.65), 0 8px 10px -6px rgba(0, 0, 0, 0.65) !important;
+}
+a[href*="visily"], 
+div:has(> a[href*="visily"]),
+footer div:has(-text="Made with") {
+  display: none !important;
+}
+

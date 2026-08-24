@@ -114,8 +114,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
           </div>
-
-          {/* Hero Right Column: Image with Overlapping Floating Badge (No Border) */}
+          
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-[2rem] overflow-visible bg-gradient-to-b from-slate-100 to-slate-200 shadow-xl aspect-[4/3] sm:aspect-[16/11]">
               <img
@@ -125,8 +124,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 className="w-full h-full object-cover object-center rounded-[2rem]"
               />
 
-              {/* Floating Top Speed Badge */}
-              <div className="absolute -bottom-6 -left-6 sm:-left-8 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-xl border border-slate-100/90 flex items-center gap-3 z-20">
+              <div className="absolute bottom-0 left-0 translate-y-1/2 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-xl border border-slate-100/90 flex items-center gap-3 z-20">
                 <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center shrink-0">
                   <Zap className="w-5 h-5 fill-current" />
                 </div>
